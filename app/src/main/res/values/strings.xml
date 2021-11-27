@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">myWeatherForecast</string>
+    <string-array name="cities">
+        <item>镇安</item>
+        <item>商洛</item>
+        <item>西安</item>
+        <item>银川</item>
+        <item>大武口</item>
+        <item>北京</item>
+        <item>杭州</item>
+        <item>固原</item>
+        <item>中宁</item>
+        <item>杭州</item>
+        <item>深圳</item>
+        <item>上海</item>
+        <item>山东</item>
+        <item>海南</item>
+        <item>河南</item>
+        <item>青海</item>
+        <item>甘肃</item>
+        <item>山西</item>
+        <item>江苏</item>
+        <item>安徽</item>
+        <item>广西</item>
+        <item>云南</item>
+    </string-array>
+</resources>

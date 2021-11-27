@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/city"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:entries="@array/cities"
+        android:spinnerMode="dropdown"
+        android:popupBackground="@color/turs"
+        android:overlapAnchor="false"
+        android:dropDownVerticalOffset="48dp"
+        android:backgroundTint="@color/blue"
+        />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/iv_weather"
+        android:src="@drawable/qing"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_content"
+        android:textSize="50sp"
+        android:text="32"
+        android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_desc"
+        android:textSize="22sp"
+        android:text="晴"
+        android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_tem"
+        android:textSize="22sp"
+        android:text="网络未连接"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_clo"
+        android:textSize="23sp"
+        android:text="无法更新数据"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_air"
+        android:paddingLeft="80dp"
+
+        android:textSize="21sp"
+        android:text="请检查网络"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rwr_fur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textStyle="italic"
+        android:text="逸于轩出品\n2021.8.8:08:38"
+
+        android:layout_marginTop="3dp"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
