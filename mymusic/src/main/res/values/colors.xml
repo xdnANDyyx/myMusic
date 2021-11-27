@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+
+    <color name="colorAccent">#D81B60</color>
+    <color name="cheng">#FF6347</color>
+    <color name="purple">#D02090</color>
+    <color name="purple_1">#33EEA9B8</color>
+    <color name="turs">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green">#458B00</color>
+    <color name="blue">#1C86EE</color>
+    <color name="zong">#8B6914</color>
+    <color name="black">#060606</color>
+    <color name="red">#FF0000</color>
+    <color name="air">#00F5FF</color>
+    <color name="gr">#00CD00</color>
+    <color name="pink">#FFE1FF</color>
+</resources>

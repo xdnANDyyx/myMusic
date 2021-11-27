@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/lmb"
+        android:background="#33EEEEEE"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#9933FA"/>
+
+        <ImageView
+            android:id="@+id/lmb_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lmb_song"
+            android:text="告白气球"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+
+            android:layout_toRightOf="@+id/lmb_pic"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lmb_singer"
+            android:text="周杰伦"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+           android:layout_below="@+id/lmb_song"
+            android:layout_toRightOf="@+id/lmb_pic"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/lmb_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/next" />
+        <ImageView
+            android:id="@+id/lmb_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/lmb_next"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/t" />
+        <ImageView
+            android:id="@+id/lmb_pre"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/lmb_play"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/pre" />
+        <SeekBar
+            android:id="@+id/positionBar2"
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:thumb="@drawable/ic_flight_takeoff_black_24dp"
+            android:progressTint="@color/red"
+            android:thumbTint="@color/gr"
+            style="@android:style/Widget.DeviceDefault.SeekBar"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/lmb_song"
+            android:layout_toEndOf="@+id/lmb_song" />
+        <ImageView
+            android:id="@+id/play_style"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/icon_dan"
+           android:layout_marginRight="9dp"
+            android:layout_toLeftOf="@+id/lmb_pre"
+            android:layout_centerVertical="true"
+             />
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rc"
+        android:layout_above="@+id/lmb">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>
